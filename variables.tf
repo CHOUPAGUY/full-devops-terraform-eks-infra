@@ -10,9 +10,9 @@ variable "networking" {
   })
   default = {
     cidr_block      = "141.0.0.0/16"
-    region          = "eu-central-1"
+    region          =  "us-east-1"
     vpc_name        = "terraform-vpc"
-    azs             = ["eu-central-1a", "eu-central-1b"]
+    azs             = ["us-east-1a", "us-east-1d"]
     public_subnets  = ["141.0.1.0/24", "141.0.2.0/24"]
     private_subnets = ["141.0.3.0/24", "141.0.4.0/24"]
     nat_gateways    = true
